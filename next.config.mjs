@@ -27,7 +27,7 @@ const nextConfig = {
         { key: 'Strict-Transport-Security', value: 'max-age=31536000; includeSubDomains; preload' },
         { key: 'X-Content-Type-Options', value: 'nosniff' },
         { key: 'Content-Security-Policy', value:
-          "default-src 'self'; frame-src 'self' https://dms.genaitech.dev; base-uri 'self'; object-src 'none'; connect-src 'self' https://dms.genaitech.dev; img-src 'self' data: https:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https:; font-src 'self' https: data:; frame-ancestors 'self';"},
+          "default-src 'self'; base-uri 'self'; object-src 'none'; connect-src 'self' https://dms.genaitech.dev; img-src 'self' data: https:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https:; font-src 'self' https: data:; frame-ancestors 'none';" },
         { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
       ]
     }

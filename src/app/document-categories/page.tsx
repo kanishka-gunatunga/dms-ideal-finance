@@ -223,7 +223,7 @@ export default function AllDocTable() {
       });
       setErrors({});
       const response = await postWithAuth(`add-category`, formData);
-
+      console.log(response);
       if (response.status === "success") {
         console.log("template_url : ", response.template_url)
         setExcelGenerated(true)
@@ -260,6 +260,7 @@ export default function AllDocTable() {
       setTimeout(() => {
         setShowToast(false);
       }, 5000);
+      console.log(error);
       // console.error("Error new version updating:", error);
     }
   };
