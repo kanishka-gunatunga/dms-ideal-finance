@@ -12,7 +12,6 @@ import { fetchRoleData } from "@/utils/dataFetchFunctions";
 import { TiEdit } from "react-icons/ti";
 import { FiTrash } from "react-icons/fi";
 import Link from "next/link";
-import { deleteWithAuth } from "@/utils/apiClient";
 import ToastMessage from "@/components/common/Toast";
 import { MdOutlineCancel } from "react-icons/md";
 import { IoCheckmark, IoClose } from "react-icons/io5";
