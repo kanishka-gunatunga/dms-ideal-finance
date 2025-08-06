@@ -51,7 +51,7 @@ import {
 import InfoModal from "@/components/common/InfoModel";
 import useAuth from "@/hooks/useAuth";
 import LoadingSpinner from "@/components/common/LoadingSpinner";
-import { deleteWithAuth, getWithAuth, postWithAuth } from "@/utils/apiClient";
+import {  getWithAuth, postWithAuth } from "@/utils/apiClient";
 import { useRouter } from "next/navigation";
 import { handleDownload, handleView } from "@/utils/documentFunctions";
 import {

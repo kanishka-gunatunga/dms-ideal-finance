@@ -9,7 +9,7 @@ import React, { useEffect, useState } from "react";
 import LoadingSpinner from "@/components/common/LoadingSpinner";
 import { IoCheckmark, IoClose, IoSaveOutline } from "react-icons/io5";
 import { MdModeEditOutline, MdOutlineCancel, MdUpload } from "react-icons/md";
-import { deleteWithAuth, getWithAuth, postWithAuth } from "@/utils/apiClient";
+import {  getWithAuth, postWithAuth } from "@/utils/apiClient";
 import { useUserContext } from "@/context/userContext";
 import ToastMessage from "@/components/common/Toast";
 import Link from "next/link";
@@ -839,7 +839,7 @@ export default function AllDocTable() {
 // import LoadingSpinner from "@/components/common/LoadingSpinner";
 // import { IoCheckmark, IoClose, IoSaveOutline } from "react-icons/io5";
 // import { MdModeEditOutline, MdOutlineCancel, MdUpload } from "react-icons/md";
-// import { deleteWithAuth, postWithAuth } from "@/utils/apiClient";
+// import {  postWithAuth } from "@/utils/apiClient";
 // import { useUserContext } from "@/context/userContext";
 // import ToastMessage from "@/components/common/Toast";
 // import Link from "next/link";

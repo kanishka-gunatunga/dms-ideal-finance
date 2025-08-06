@@ -53,7 +53,7 @@ import useAuth from "@/hooks/useAuth";
 import LoadingSpinner from "@/components/common/LoadingSpinner";
 import {
   deleteAllWithAuth,
-  deleteWithAuth,
+  
   getWithAuth,
   postWithAuth,
 } from "@/utils/apiClient";

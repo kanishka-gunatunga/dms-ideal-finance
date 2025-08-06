@@ -9,7 +9,7 @@ import React, { useEffect, useState } from "react";
 import LoadingSpinner from "@/components/common/LoadingSpinner";
 import { IoCheckmark, IoClose, IoSaveOutline } from "react-icons/io5";
 import { MdModeEditOutline, MdOutlineCancel, MdUpload } from "react-icons/md";
-import { deleteWithAuth, getWithAuth, postAxiosWithAuth, postWithAuth, postWithAuthXML } from "@/utils/apiClient";
+import {  getWithAuth, postAxiosWithAuth, postWithAuth, postWithAuthXML } from "@/utils/apiClient";
 import { useUserContext } from "@/context/userContext";
 import ToastMessage from "@/components/common/Toast";
 import Link from "next/link";

@@ -7,7 +7,7 @@ import LoadingSpinner from "@/components/common/LoadingSpinner";
 import Paragraph from "@/components/common/Paragraph";
 import DashboardLayout from "@/components/DashboardLayout";
 import useAuth from "@/hooks/useAuth";
-import { deleteWithAuth, getWithAuth, postWithAuth } from "@/utils/apiClient";
+import {  getWithAuth, postWithAuth } from "@/utils/apiClient";
 import {
   fetchDeletedDocuments,
 } from "@/utils/dataFetchFunctions";

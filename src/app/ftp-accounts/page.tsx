@@ -21,7 +21,7 @@ import { MdModeEditOutline, MdOutlineCancel } from "react-icons/md";
 import {
   fetchFTPData,
 } from "@/utils/dataFetchFunctions";
-import { deleteWithAuth, getWithAuth, postWithAuth } from "@/utils/apiClient";
+import {  getWithAuth, postWithAuth } from "@/utils/apiClient";
 import { IoMdTrash } from "react-icons/io";
 import { FaEllipsisV } from "react-icons/fa";
 import DashboardLayoutSuperAdmin from "@/components/DashboardLayoutSuperAdmin";

@@ -32,7 +32,7 @@ import {
   fetchCategoryChildrenData,
   fetchCategoryData,
 } from "@/utils/dataFetchFunctions";
-import { deleteWithAuth, getWithAuth, postWithAuth } from "@/utils/apiClient";
+import {  getWithAuth, postWithAuth } from "@/utils/apiClient";
 import { usePermissions } from "@/context/userPermissions";
 import { hasPermission } from "@/utils/permission";
 import { IoMdCloudDownload } from "react-icons/io";

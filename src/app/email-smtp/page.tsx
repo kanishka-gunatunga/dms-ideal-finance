@@ -12,7 +12,7 @@ import { FaEllipsisV } from "react-icons/fa";
 import { FaKey, FaPlus } from "react-icons/fa6";
 import { MdModeEditOutline, MdOutlineCancel, MdPeople } from "react-icons/md";
 import LoadingSpinner from "@/components/common/LoadingSpinner";
-import { deleteWithAuth, postWithAuth } from "@/utils/apiClient";
+import {  postWithAuth } from "@/utils/apiClient";
 import { IoCheckmark, IoClose, IoSaveOutline } from "react-icons/io5";
 import Link from "next/link";
 import { SMTPUploadItem } from "@/types/types";

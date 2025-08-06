@@ -31,7 +31,7 @@ import {
     fetchCategoryData,
     fetchFtpAccounts,
 } from "@/utils/dataFetchFunctions";
-import { deleteWithAuth, getWithAuth, postWithAuth } from "@/utils/apiClient";
+import {  getWithAuth, postWithAuth } from "@/utils/apiClient";
 import { IoMdCloudDownload } from "react-icons/io";
 import DashboardLayoutSuperAdmin from "@/components/DashboardLayoutSuperAdmin";
 
