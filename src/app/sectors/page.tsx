@@ -91,7 +91,7 @@ const CategoryManagement: React.FC = () => {
 
   const handleDeleteNode = async (id: string) => {
     try {
-      await deleteWithAuth(`delete-sector/${id}`);
+      await getWithAuth(`delete-sector/${id}`);
       fetchRootNodes();
     } catch (error) {
       console.error('Failed to delete node', error);

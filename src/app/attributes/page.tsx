@@ -55,7 +55,7 @@ export default function AllDocTable() {
 
   const handleDeleteAttribute = async () => {
     try {
-      const response = await deleteWithAuth(`delete-attribute/${selectedItemId}`);
+      const response = await getWithAuth(`delete-attribute/${selectedItemId}`);
       if (response.status === "success") {
         handleCloseModal("deleteModel");
         setToastType("success");

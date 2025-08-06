@@ -57,7 +57,7 @@ export default function AllDocTable() {
 
     // if (confirmDelete) {
       try {
-        const response = await deleteWithAuth(`delete-smtp/${selectedItemId}`);
+        const response = await getWithAuth(`delete-smtp/${selectedItemId}`);
         if (response.status === "success") {
           handleCloseModal("deleteModel");
           setToastType("success");

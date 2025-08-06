@@ -149,7 +149,7 @@ export default function AllDocTable() {
     }
 
     try {
-      const response = await deleteWithAuth(`delete-reminder/${id}`);
+      const response = await getWithAuth(`delete-reminder/${id}`);
 
       if (response.status === "success") {
         handleCloseModal("shareDeleteModel");

@@ -164,7 +164,7 @@ export default function AllDocTable() {
   const handleDeleteUser = async (id: string) => {
 
     try {
-      const response = await deleteWithAuth(`delete-user/${id}`);
+      const response = await getWithAuth(`delete-user/${id}`);
       if (response.status === "fail") {
         setToastType("error");
         setToastMessage("Failed to delete user!");

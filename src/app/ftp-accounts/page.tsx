@@ -223,7 +223,7 @@ export default function AllDocTable() {
 
   const handleDeleteCategory = async () => {
     try {
-      const response = await deleteWithAuth(
+      const response = await getWithAuth(
         `delete-ftp-account/${selectedItemId}`
       );
       if (response.status === "success") {

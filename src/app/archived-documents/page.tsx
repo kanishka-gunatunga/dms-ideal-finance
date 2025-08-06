@@ -189,7 +189,7 @@ export default function AllDocTable() {
     }
 
     try {
-      const response = await deleteWithAuth(`delete-document/${selectedDocumentId}/${userId}`);
+      const response = await getWithAuth(`delete-document/${selectedDocumentId}/${userId}`);
       // console.log("document deleted successfully:", response);
 
       if (response.status === "success") {

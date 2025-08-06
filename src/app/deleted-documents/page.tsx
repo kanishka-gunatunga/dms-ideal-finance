@@ -180,7 +180,7 @@ export default function AllDocTable() {
     }
 
     try {
-      const response = await deleteWithAuth(`delete-document-permanently/${selectedDocumentId}`);
+      const response = await getWithAuth(`delete-document-permanently/${selectedDocumentId}`);
       // console.log("document deleted successfully:", response);
 
       if (response.status === "success") {

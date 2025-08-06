@@ -1323,7 +1323,7 @@ export default function AllDocTable() {
 
 //   const handleDeleteBulk = async (id: number) => {
 //     try {
-//       const response = await deleteWithAuth(`bulk-upload-excel-delete-record/${id}`);
+//       const response = await getWithAuth(`bulk-upload-excel-delete-record/${id}`);
 //       if (response.status === "success") {
 //         setToastType("success");
 //         setToastMessage("Record deleted successfully!");
@@ -1347,7 +1347,7 @@ export default function AllDocTable() {
 
 //   const handleDeleteBulkDocument = async () => {
 //     try {
-//       const response = await deleteWithAuth(`bulk-upload-excel-delete-file/${columnData.excel_id}`);
+//       const response = await getWithAuth(`bulk-upload-excel-delete-file/${columnData.excel_id}`);
 //       if (response.status === "success") {
 //         setToastType("success");
 //         setToastMessage("Bulk deleted successfully!");
