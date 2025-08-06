@@ -9,6 +9,7 @@ import { Form, Modal, Pagination, Table } from "react-bootstrap";
 import { FaPlus } from "react-icons/fa6";
 import LoadingSpinner from "@/components/common/LoadingSpinner";
 import { fetchRoleData } from "@/utils/dataFetchFunctions";
+import { getWithAuth } from "@/utils/apiClient";
 import { TiEdit } from "react-icons/ti";
 import { FiTrash } from "react-icons/fi";
 import Link from "next/link";
