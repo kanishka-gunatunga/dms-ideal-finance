@@ -12,7 +12,7 @@ import { useUserContext } from "@/context/userContext";
 import { usePermissions } from "@/context/userPermissions";
 import useAuth from "@/hooks/useAuth";
 import { CommentItem, UserDropdownItem, RoleDropdownItem, VersionHistoryItem } from "@/types/types";
-import { getWithAuth, getWithAuth, postWithAuth } from "@/utils/apiClient";
+import { getWithAuth, postWithAuth } from "@/utils/apiClient";
 import { fetchCategoryData, fetchDocumentsData, fetchAndMapUserData, fetchRoleData, fetchVersionHistory } from "@/utils/dataFetchFunctions";
 import { handleDownload } from "@/utils/documentFunctions";
 import { hasPermission } from "@/utils/permission";
