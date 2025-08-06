@@ -27,7 +27,7 @@ import {
 } from "react-icons/md";
 import LoadingSpinner from "@/components/common/LoadingSpinner";
 import { IoCheckmark, IoClose } from "react-icons/io5";
-import {  postWithAuth } from "@/utils/apiClient";
+import {  postWithAuth,getWithAuth } from "@/utils/apiClient";
 import Link from "next/link";
 import ToastMessage from "@/components/common/Toast";
 import { ReminderItem } from "@/types/types";
