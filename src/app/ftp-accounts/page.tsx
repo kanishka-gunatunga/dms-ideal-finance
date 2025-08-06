@@ -21,7 +21,7 @@ import { MdModeEditOutline, MdOutlineCancel } from "react-icons/md";
 import {
   fetchFTPData,
 } from "@/utils/dataFetchFunctions";
-import { getWithAuth, getWithAuth, postWithAuth } from "@/utils/apiClient";
+import { deleteWithAuth, getWithAuth, postWithAuth } from "@/utils/apiClient";
 import { IoMdTrash } from "react-icons/io";
 import { FaEllipsisV } from "react-icons/fa";
 import DashboardLayoutSuperAdmin from "@/components/DashboardLayoutSuperAdmin";
@@ -223,7 +223,7 @@ export default function AllDocTable() {
 
   const handleDeleteCategory = async () => {
     try {
-      const response = await getWithAuth(
+      const response = await deleteWithAuth(
         `delete-ftp-account/${selectedItemId}`
       );
       if (response.status === "success") {

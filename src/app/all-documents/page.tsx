@@ -53,7 +53,7 @@ import useAuth from "@/hooks/useAuth";
 import LoadingSpinner from "@/components/common/LoadingSpinner";
 import {
   deleteAllWithAuth,
-  getWithAuth,
+  deleteWithAuth,
   getWithAuth,
   postWithAuth,
 } from "@/utils/apiClient";
@@ -956,7 +956,7 @@ export default function AllDocTable() {
 
   const handleDeleteComment = async (id: string) => {
     try {
-      const response = await getWithAuth(`delete-comment/${id}/${userId}`);
+      const response = await deleteWithAuth(`delete-comment/${id}/${userId}`);
       if (response.status === "success") {
         setToastType("success");
         fetchComments(selectedDocumentId!);
@@ -1095,7 +1095,7 @@ export default function AllDocTable() {
 
   const handleDeleteShareableLink = async (id: number) => {
     try {
-      const response = await getWithAuth(
+      const response = await deleteWithAuth(
         `delete-shareble-link/${id}/${userId}`
       );
       if (response.status === "success") {
@@ -1204,7 +1204,7 @@ export default function AllDocTable() {
     }
 
     try {
-      const response = await getWithAuth(`delete-document/${id}/${userId}`);
+      const response = await deleteWithAuth(`delete-document/${id}/${userId}`);
 
       if (response.status === "success") {
         handleCloseModal("deleteFileModel");
@@ -1680,7 +1680,7 @@ export default function AllDocTable() {
     }
 
     try {
-      const response = await getWithAuth(
+      const response = await deleteWithAuth(
         `delete-share/${selectedShareDocUserType}/${selectedShareDocId}`
       );
       if (response.status === "success") {

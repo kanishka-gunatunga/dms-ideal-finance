@@ -5,7 +5,7 @@
 import React, { useState, useEffect } from 'react';
 import { Tree, Modal, Input, Button } from 'antd';
 import type { TreeDataNode, TreeProps } from 'antd';
-import { getWithAuth, getWithAuth, postWithAuth } from '@/utils/apiClient';
+import { deleteWithAuth, getWithAuth, postWithAuth } from '@/utils/apiClient';
 import Heading from '@/components/common/Heading';
 import DashboardLayout from '@/components/DashboardLayout';
 import { IoPencil, IoTrash } from 'react-icons/io5';
@@ -91,7 +91,7 @@ const CategoryManagement: React.FC = () => {
 
   const handleDeleteNode = async (id: string) => {
     try {
-      await getWithAuth(`delete-sector/${id}`);
+      await deleteWithAuth(`delete-sector/${id}`);
       fetchRootNodes();
     } catch (error) {
       console.error('Failed to delete node', error);

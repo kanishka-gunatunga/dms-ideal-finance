@@ -32,7 +32,7 @@ import {
   fetchCategoryChildrenData,
   fetchCategoryData,
 } from "@/utils/dataFetchFunctions";
-import { getWithAuth, getWithAuth, postWithAuth } from "@/utils/apiClient";
+import { deleteWithAuth, getWithAuth, postWithAuth } from "@/utils/apiClient";
 import { usePermissions } from "@/context/userPermissions";
 import { hasPermission } from "@/utils/permission";
 import { IoMdCloudDownload } from "react-icons/io";
@@ -452,7 +452,7 @@ export default function AllDocTable() {
   const handleDeleteCategory = async () => {
     // console.log("delete", selectedItemId);
     try {
-      const response = await getWithAuth(
+      const response = await deleteWithAuth(
         `delete-category/${selectedItemId}`
       );
       if (response.status === "success") {

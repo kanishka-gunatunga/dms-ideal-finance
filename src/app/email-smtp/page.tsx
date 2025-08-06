@@ -12,7 +12,7 @@ import { FaEllipsisV } from "react-icons/fa";
 import { FaKey, FaPlus } from "react-icons/fa6";
 import { MdModeEditOutline, MdOutlineCancel, MdPeople } from "react-icons/md";
 import LoadingSpinner from "@/components/common/LoadingSpinner";
-import { getWithAuth, postWithAuth } from "@/utils/apiClient";
+import { deleteWithAuth, postWithAuth } from "@/utils/apiClient";
 import { IoCheckmark, IoClose, IoSaveOutline } from "react-icons/io5";
 import Link from "next/link";
 import { SMTPUploadItem } from "@/types/types";
@@ -57,7 +57,7 @@ export default function AllDocTable() {
 
     // if (confirmDelete) {
       try {
-        const response = await getWithAuth(`delete-smtp/${selectedItemId}`);
+        const response = await deleteWithAuth(`delete-smtp/${selectedItemId}`);
         if (response.status === "success") {
           handleCloseModal("deleteModel");
           setToastType("success");
