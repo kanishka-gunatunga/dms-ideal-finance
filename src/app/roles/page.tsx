@@ -12,7 +12,7 @@ import { fetchRoleData } from "@/utils/dataFetchFunctions";
 import { TiEdit } from "react-icons/ti";
 import { FiTrash } from "react-icons/fi";
 import Link from "next/link";
-import { deleteWithAuth } from "@/utils/apiClient";
+import { getWithAuth } from "@/utils/apiClient";
 import ToastMessage from "@/components/common/Toast";
 import { MdOutlineCancel } from "react-icons/md";
 import { IoCheckmark, IoClose } from "react-icons/io5";
@@ -98,7 +98,7 @@ export default function AllDocTable() {
 
   const handleDeleteRole = async (id: number) => {
     try {
-      const response = await deleteWithAuth(`delete-role/${id}`);
+      const response = await getWithAuth(`delete-role/${id}`);
       if (response.status === "success") {
         setToastType("success");
         fetchRoleData(setDummyData);

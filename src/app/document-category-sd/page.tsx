@@ -31,7 +31,7 @@ import {
     fetchCategoryData,
     fetchFtpAccounts,
 } from "@/utils/dataFetchFunctions";
-import { deleteWithAuth, getWithAuth, postWithAuth } from "@/utils/apiClient";
+import { getWithAuth, getWithAuth, postWithAuth } from "@/utils/apiClient";
 import { IoMdCloudDownload } from "react-icons/io";
 import DashboardLayoutSuperAdmin from "@/components/DashboardLayoutSuperAdmin";
 
@@ -403,7 +403,7 @@ export default function AllDocTable() {
     const handleDeleteCategory = async () => {
         // console.log("delete", selectedItemId);
         try {
-            const response = await deleteWithAuth(
+            const response = await getWithAuth(
                 `delete-category/${selectedItemId}`
             );
             if (response.status === "success") {

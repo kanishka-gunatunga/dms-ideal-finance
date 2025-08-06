@@ -7,7 +7,7 @@ import Paragraph from "@/components/common/Paragraph";
 import DashboardLayout from "@/components/DashboardLayout";
 import useAuth from "@/hooks/useAuth";
 import { CategoryDropdownItem } from "@/types/types";
-import { deleteWithAuth, getWithAuth, postWithAuth } from "@/utils/apiClient";
+import { getWithAuth, getWithAuth, postWithAuth } from "@/utils/apiClient";
 import {
   fetchArchivedDocuments,
   fetchCategoryData,
@@ -189,7 +189,7 @@ export default function AllDocTable() {
     }
 
     try {
-      const response = await deleteWithAuth(`delete-document/${selectedDocumentId}/${userId}`);
+      const response = await getWithAuth(`delete-document/${selectedDocumentId}/${userId}`);
       // console.log("document deleted successfully:", response);
 
       if (response.status === "success") {

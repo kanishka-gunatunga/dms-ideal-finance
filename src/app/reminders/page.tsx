@@ -27,7 +27,7 @@ import {
 } from "react-icons/md";
 import LoadingSpinner from "@/components/common/LoadingSpinner";
 import { IoCheckmark, IoClose } from "react-icons/io5";
-import { deleteWithAuth, postWithAuth } from "@/utils/apiClient";
+import { getWithAuth, postWithAuth } from "@/utils/apiClient";
 import Link from "next/link";
 import ToastMessage from "@/components/common/Toast";
 import { ReminderItem } from "@/types/types";
@@ -149,7 +149,7 @@ export default function AllDocTable() {
     }
 
     try {
-      const response = await deleteWithAuth(`delete-reminder/${id}`);
+      const response = await getWithAuth(`delete-reminder/${id}`);
 
       if (response.status === "success") {
         handleCloseModal("shareDeleteModel");

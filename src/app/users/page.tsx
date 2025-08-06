@@ -11,7 +11,7 @@ import { FaEllipsisV } from "react-icons/fa";
 import { FaKey, FaPlus } from "react-icons/fa6";
 import { MdModeEditOutline, MdOutlineCancel, MdPeople } from "react-icons/md";
 import LoadingSpinner from "@/components/common/LoadingSpinner";
-import { deleteWithAuth, getWithAuth, postWithAuth } from "@/utils/apiClient";
+import { getWithAuth, getWithAuth, postWithAuth } from "@/utils/apiClient";
 import { IoCheckmark, IoClose, IoSaveOutline } from "react-icons/io5";
 import Link from "next/link";
 import { TableItem } from "@/types/types";
@@ -164,7 +164,7 @@ export default function AllDocTable() {
   const handleDeleteUser = async (id: string) => {
 
     try {
-      const response = await deleteWithAuth(`delete-user/${id}`);
+      const response = await getWithAuth(`delete-user/${id}`);
       if (response.status === "fail") {
         setToastType("error");
         setToastMessage("Failed to delete user!");

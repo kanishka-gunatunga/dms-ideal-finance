@@ -37,7 +37,7 @@ const deleteDocumentVectors = async (chatId: string, action?: string) => {
     console.log("data delete qa: ", res);
     return res;
   } else {
-    // const res = await deleteWithAuth(`delete-nonqa/${chatId}`);
+    // const res = await getWithAuth(`delete-nonqa/${chatId}`);
     console.log("data delete non-qa: ");
     // return res;
   }

@@ -7,7 +7,7 @@ import LoadingSpinner from "@/components/common/LoadingSpinner";
 import Paragraph from "@/components/common/Paragraph";
 import DashboardLayout from "@/components/DashboardLayout";
 import useAuth from "@/hooks/useAuth";
-import { deleteWithAuth, getWithAuth, postWithAuth } from "@/utils/apiClient";
+import { getWithAuth, getWithAuth, postWithAuth } from "@/utils/apiClient";
 import {
   fetchDeletedDocuments,
 } from "@/utils/dataFetchFunctions";
@@ -180,7 +180,7 @@ export default function AllDocTable() {
     }
 
     try {
-      const response = await deleteWithAuth(`delete-document-permanently/${selectedDocumentId}`);
+      const response = await getWithAuth(`delete-document-permanently/${selectedDocumentId}`);
       // console.log("document deleted successfully:", response);
 
       if (response.status === "success") {
