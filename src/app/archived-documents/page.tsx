@@ -7,7 +7,7 @@ import Paragraph from "@/components/common/Paragraph";
 import DashboardLayout from "@/components/DashboardLayout";
 import useAuth from "@/hooks/useAuth";
 import { CategoryDropdownItem } from "@/types/types";
-import { getWithAuth, postWithAuth } from "@/utils/apiClient";
+import { getWithAuth, getWithAuth, postWithAuth } from "@/utils/apiClient";
 import {
   fetchArchivedDocuments,
   fetchCategoryData,
